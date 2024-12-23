@@ -3,9 +3,9 @@
  * types available TRL uses a shim layer rather than choosing a single particular set of Foundry VTT types to associate
  * with. There are many advantages to this approach as various Foundry VTT platform type declaration efforts wax and
  * wane. This shim layer provides a minimal set of re-exported global types that are common between all known Foundry
- * VTT type efforts. This makes it easy to search the TRL codebase and API docs for where Foundry VTT platform
- * declarations are used. The TRL API docs treat these symbols as external links to the official Foundry VTT API docs
- * providing end-to-end API docs as well.
+ * VTT type efforts. This makes it easy to search the TRL codebase for where Foundry VTT platform declarations are used.
+ * The TRL API docs treat these symbols as external links to the official Foundry VTT API docs providing end-to-end API
+ * docs as well.
  *
  * The following sets of Foundry types are known to work:
  * - [foundry-pf2e](https://github.com/7H3LaughingMan/foundry-pf2e) (more stable / less specificity)
