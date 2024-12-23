@@ -1,5 +1,5 @@
 {
-  "name": "@typhonjs-fvtt/types-fvtt",
+  "name": "@typhonjs-fvtt/types-fvtt-shim",
   "version": "0.0.0",
   "description": "Provides a shim to namespace the various global Foundry VTT types accessed in TRL.",
   "type": "module",
@@ -10,13 +10,13 @@
   ],
   "exports": {
     ".": {
-      "types": "./_dist/index.d.ts",
-      "import": "./_dist/index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "sideEffects": [
-    "./_dist/index.d.ts",
-    "./_dist/index.js"
+    "./dist/index.d.ts",
+    "./dist/index.js"
   ],
   "devDependencies": {
     "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
@@ -25,7 +25,7 @@
   "engines": {
     "node": ">=18"
   },
-  "homepage": "https://github.com/typhonjs-fvtt-lib/types-fvtt#readme",
+  "homepage": "https://github.com/typhonjs-fvtt-lib/types-fvtt-shim#readme",
   "keywords": [
     "foundry vtt",
     "fvtt",
@@ -33,10 +33,10 @@
     "shim"
   ],
   "files": [
-    "/_dist"
+    "/dist"
   ],
   "directories": {},
   "license": "MPL-2.0",
-  "repository": "github:typhonjs-fvtt-lib/types-fvtt",
-  "bugs": "https://github.com/typhonjs-fvtt-lib/types-fvtt/issues"
+  "repository": "github:typhonjs-fvtt-lib/types-fvtt-shim",
+  "bugs": "https://github.com/typhonjs-fvtt-lib/types-fvtt-shim/issues"
 }
