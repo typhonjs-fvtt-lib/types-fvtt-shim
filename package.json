@@ -10,17 +10,18 @@
   ],
   "exports": {
     "./league": {
-      "types": "./dist/league.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/league/index.d.ts",
+      "import": "./dist/league/index.js"
     },
     "./pf2e": {
-      "types": "./dist/pf2e.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/pf2e/index.d.ts",
+      "import": "./dist/pf2e/index.js"
     }
   },
   "sideEffects": true,
   "devDependencies": {
     "@league-of-foundry-developers/foundry-vtt-types": "^12.331.3-beta",
+    "@typhonjs-build-test/esm-d-ts": "^0.3.0-next.9",
     "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
     "typescript": "^5.7.2"
   },
@@ -40,5 +41,8 @@
   "directories": {},
   "license": "MPL-2.0",
   "repository": "github:typhonjs-fvtt-lib/types-fvtt-shim",
-  "bugs": "https://github.com/typhonjs-fvtt-lib/types-fvtt-shim/issues"
+  "bugs": "https://github.com/typhonjs-fvtt-lib/types-fvtt-shim/issues",
+  "scripts": {
+    "types": "esm-d-ts gen -c"
+  }
 }

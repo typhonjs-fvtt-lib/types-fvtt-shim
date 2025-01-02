@@ -1,14 +1,14 @@
 {
   "compilerOptions" : {
+    "baseUrl": ".",
     "lib": ["ES2022"],
     "module": "ES2022",
     "moduleResolution" : "bundler",
     "target": "ES2022",
     "strict": true,
+    "skipLibCheck": true,
     "types": ["@league-of-foundry-developers/foundry-vtt-types"]
-//    "types": ["foundry-pf2e/foundry"]
   },
- "include": ["./dist/common.d.ts", "./dist/league.d.ts"],
-//  "include": ["./dist/common.d.ts", "./dist/pf2e.d.ts"],
+  "include": ["./common.ts", "./league.ts"],
   "exclude": ["node_modules"]
 }
