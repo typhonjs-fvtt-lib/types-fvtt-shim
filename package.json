@@ -9,16 +9,18 @@
     "Michael Leahy <support@typhonjs.io> (https://github.com/typhonrt)"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
+    "./league": {
+      "types": "./dist/league.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./pf2e": {
+      "types": "./dist/pf2e.d.ts",
       "import": "./dist/index.js"
     }
   },
-  "sideEffects": [
-    "./dist/index.d.ts",
-    "./dist/index.js"
-  ],
+  "sideEffects": true,
   "devDependencies": {
+    "@league-of-foundry-developers/foundry-vtt-types": "^12.331.3-beta",
     "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
     "typescript": "^5.7.2"
   },
