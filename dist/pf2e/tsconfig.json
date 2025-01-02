@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "types": ["foundry-pf2e/foundry"]
   },
-  "include": ["./common.ts", "./pf2e.ts"],
+  "include": ["./index.d.ts"],
   "exclude": ["node_modules"]
 }

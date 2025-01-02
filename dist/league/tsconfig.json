@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "types": ["@league-of-foundry-developers/foundry-vtt-types"]
   },
-  "include": ["./common.ts", "./league.ts"],
+  "include": ["./index.d.ts"],
   "exclude": ["node_modules"]
 }
