@@ -18,6 +18,7 @@ declare global {
          FVTTDocument as Document,
          FVTTDocumentConstructor as DocumentConstructor,
          FVTTDocumentCollection as DocumentCollection,
+         FVTTEmbeddedCollection as EmbeddedCollection,
          EnrichmentOptions,
          FavoriteFolder,
       };
@@ -26,9 +27,10 @@ declare global {
 
 // Generic types -----------------------------------------------------------------------------------------------------
 
-type FVTTDocument = foundry.abstract.Document<any, any>;
-type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
+type FVTTDocument = foundry.abstract.Document;
+type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document> & typeof foundry.abstract.Document;
 type FVTTDocumentCollection = DocumentCollection<any>
+type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 
 // Missing declarations ----------------------------------------------------------------------------------------------
 

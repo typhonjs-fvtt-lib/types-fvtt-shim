@@ -9,6 +9,10 @@
     "Michael Leahy <support@typhonjs.io> (https://github.com/typhonrt)"
   ],
   "exports": {
+    "./guard": {
+      "types": "./dist/guard/index.d.ts",
+      "import": "./dist/guard/index.js"
+    },
     "./league": {
       "types": "./dist/league/index.d.ts",
       "import": "./dist/league/index.js"
@@ -21,8 +25,11 @@
   "sideEffects": true,
   "devDependencies": {
     "@league-of-foundry-developers/foundry-vtt-types": "^12.331.3-beta",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@typhonjs-build-test/esm-d-ts": "^0.3.0-next.9",
     "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
+    "rollup": "^4.29.1",
+    "tslib": "^2.8.1",
     "typescript": "^5.7.2"
   },
   "engines": {
@@ -43,6 +50,7 @@
   "repository": "github:typhonjs-fvtt-lib/types-fvtt-shim",
   "bugs": "https://github.com/typhonjs-fvtt-lib/types-fvtt-shim/issues",
   "scripts": {
+    "build": "rollup -c",
     "types": "esm-d-ts gen -c"
   }
 }

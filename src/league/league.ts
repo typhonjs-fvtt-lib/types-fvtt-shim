@@ -18,6 +18,7 @@ declare global {
          FVTTDocument as Document,
          FVTTDocumentConstructor as DocumentConstructor,
          FVTTDocumentCollection as DocumentCollection,
+         FVTTEmbeddedCollection as EmbeddedCollection,
          EnrichmentOptions,
          FavoriteFolder,
       };
@@ -35,5 +36,6 @@ type EnrichmentOptions = TextEditor.EnrichmentOptions;
 type FavoriteFolder = FilePicker.FavoriteFolder;
 type FVTTDocument = foundry.abstract.Document.Any;
 type FVTTDocumentConstructor = foundry.abstract.Document.AnyConstructor;
+type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 
 export {};

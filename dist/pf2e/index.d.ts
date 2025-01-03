@@ -1,10 +1,3 @@
-/**
- * Re-exports global Foundry VTT types under a namespace shim to disambiguate global Foundry types referenced in TRL.
- *
- * @hidden
- *
- * @packageDocumentation
- */
 export {};
 /**
  * @hidden
@@ -37,14 +30,16 @@ declare global {
       type FVTTDocument as Document,
       type FVTTDocumentConstructor as DocumentConstructor,
       type FVTTDocumentCollection as DocumentCollection,
+      type FVTTEmbeddedCollection as EmbeddedCollection,
       EnrichmentOptions,
       type FavoriteFolder,
     };
   }
 }
-type FVTTDocument = foundry.abstract.Document<any, any>;
-type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
+type FVTTDocument = foundry.abstract.Document;
+type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document> & typeof foundry.abstract.Document;
 type FVTTDocumentCollection = DocumentCollection<any>;
+type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 interface FavoriteFolder {
   /** The source of the folder (e.g. "data", "public") */
   source: string;
