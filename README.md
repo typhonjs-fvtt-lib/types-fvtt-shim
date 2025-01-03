@@ -18,7 +18,7 @@ The following sets of Foundry types are known to work:
 - [foundry-pf2e](https://github.com/7H3LaughingMan/foundry-pf2e) (more stable / less specificity)
 
 Please see the starter template repos for complete examples:
-- [template-svelte-ts-league (League's Community Types)](https://github.com/typhonjs-fvtt-demo/template-svelte-ts),
+- [Coming Soon!] [template-svelte-ts-league (League's Community Types)](https://github.com/typhonjs-fvtt-demo/template-svelte-ts),
 - [template-svelte-ts-pf2e (PF2E Types)](https://github.com/typhonjs-fvtt-demo/template-svelte-ts),
 
 
