@@ -28,9 +28,14 @@ declare global {
 // Generic types -----------------------------------------------------------------------------------------------------
 
 type FVTTDocument = foundry.abstract.Document;
-type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document> & typeof foundry.abstract.Document;
+type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = DocumentCollection<any>
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
+
+// Note: due to how the PF2E types handle separating the document constructor via `DocumentConstructorOf` when
+// developing against the PF2E types internally it is handy to use this declaration to get full abstract document types.
+// However, it must be disabled on release.
+// type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document> & typeof foundry.abstract.Document;
 
 // Missing declarations ----------------------------------------------------------------------------------------------
 

@@ -37,7 +37,7 @@ declare global {
   }
 }
 type FVTTDocument = foundry.abstract.Document;
-type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document> & typeof foundry.abstract.Document;
+type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = DocumentCollection<any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 interface FavoriteFolder {
