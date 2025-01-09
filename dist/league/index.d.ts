@@ -9,7 +9,7 @@ declare global {
    * @hidden
    */
   namespace fvtt {
-    export { ClientDocument, Application, ApplicationOptions, Folder, Game };
+    export { Application, ApplicationOptions, ClientDocument, CompendiumCollection, Folder, Game, RollTable };
   }
 }
 
@@ -33,6 +33,7 @@ declare global {
       FVTTEmbeddedCollection as EmbeddedCollection,
       EnrichmentOptions,
       FavoriteFolder,
+      FontFamilyDefinition,
     };
   }
 }
@@ -43,3 +44,4 @@ type FavoriteFolder = FilePicker.FavoriteFolder;
 type FVTTDocument = foundry.abstract.Document.Any;
 type FVTTDocumentConstructor = foundry.abstract.Document.AnyConstructor;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
+type FontFamilyDefinition = CONFIG.Font.FamilyDefinition;

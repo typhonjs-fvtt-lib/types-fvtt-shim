@@ -10,11 +10,14 @@ declare global {
    namespace fvtt
    {
       export {
-         ClientDocument,
          Application,
          ApplicationOptions,
+         ClientDocument,
+         CompendiumCollection,
          Folder,
+         FontFamilyDefinition,   // League is not in common / remapped.
          Game,
+         RollTable
       };
    }
 }

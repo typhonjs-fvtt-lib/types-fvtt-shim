@@ -9,7 +9,16 @@ declare global {
    * @hidden
    */
   namespace fvtt {
-    export { ClientDocument, Application, ApplicationOptions, Folder, Game };
+    export {
+      Application,
+      ApplicationOptions,
+      ClientDocument,
+      CompendiumCollection,
+      Folder,
+      FontFamilyDefinition,
+      Game,
+      RollTable,
+    };
   }
 }
 

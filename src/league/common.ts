@@ -10,11 +10,13 @@ declare global {
    namespace fvtt
    {
       export {
-         ClientDocument,
          Application,
          ApplicationOptions,
+         ClientDocument,
+         CompendiumCollection,
          Folder,
          Game,
+         RollTable
       };
    }
 }
