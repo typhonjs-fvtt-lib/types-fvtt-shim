@@ -29,6 +29,7 @@ declare global {
 // Generic types -----------------------------------------------------------------------------------------------------
 
 type FVTTDocumentCollection = DocumentCollection<any, any>
+type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 
 // Remapped types ----------------------------------------------------------------------------------------------------
 
@@ -37,7 +38,6 @@ type EnrichmentOptions = TextEditor.EnrichmentOptions;
 type FavoriteFolder = FilePicker.FavoriteFolder;
 type FVTTDocument = foundry.abstract.Document.Any;
 type FVTTDocumentConstructor = foundry.abstract.Document.AnyConstructor;
-type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 type FontFamilyDefinition = CONFIG.Font.FamilyDefinition;
 
 export {};
