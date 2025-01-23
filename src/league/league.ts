@@ -15,6 +15,7 @@ declare global {
    {
       export {
          ApplicationHeaderButton,
+         FVTTDataModel as DataModel,
          FVTTDocument as Document,
          FVTTDocumentConstructor as DocumentConstructor,
          FVTTDocumentCollection as DocumentCollection,
@@ -28,6 +29,7 @@ declare global {
 
 // Generic types -----------------------------------------------------------------------------------------------------
 
+type FVTTDataModel = foundry.abstract.DataModel<any>;
 type FVTTDocumentCollection = DocumentCollection<any, any>
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 

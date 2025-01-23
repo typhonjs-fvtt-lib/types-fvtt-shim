@@ -27,6 +27,7 @@ declare global {
   namespace fvtt {
     export type {
       ApplicationHeaderButton,
+      FVTTDataModel as DataModel,
       FVTTDocument as Document,
       FVTTDocumentConstructor as DocumentConstructor,
       FVTTDocumentCollection as DocumentCollection,
@@ -37,6 +38,7 @@ declare global {
     };
   }
 }
+type FVTTDataModel = foundry.abstract.DataModel<any>;
 type FVTTDocumentCollection = DocumentCollection<any, any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 type ApplicationHeaderButton = Application.HeaderButton;

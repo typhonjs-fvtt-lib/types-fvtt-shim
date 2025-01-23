@@ -36,6 +36,7 @@ declare global {
   namespace fvtt {
     export {
       ApplicationHeaderButton,
+      type FVTTDataModel as DataModel,
       type FVTTDocument as Document,
       type FVTTDocumentConstructor as DocumentConstructor,
       type FVTTDocumentCollection as DocumentCollection,
@@ -45,6 +46,7 @@ declare global {
     };
   }
 }
+type FVTTDataModel = foundry.abstract.DataModel;
 type FVTTDocument = foundry.abstract.Document;
 type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = DocumentCollection<any>;
