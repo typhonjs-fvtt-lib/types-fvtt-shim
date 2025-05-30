@@ -1,11 +1,14 @@
 # types-fvtt-shim
-DO NOT USE / INSTALL
+DO NOT USE / INSTALL / Foundry VTT v13+
 
-This is a utility package that is included in TRL via:
+Several useful TypeScript type guards are available for the Foundry document model:
+- `#runtime/types/fvtt-shim/guard`
+
+The remaining sub-path exports are utility packages included in TRL via:
 - `@typhonjs-fvtt/runtime/types/fvtt-shim/league`
 - `@typhonjs-fvtt/runtime/types/fvtt-shim/pf2e`
 
-Internally to support end-to-end Typescript declarations and remain neutral to the various options for Foundry VTT
+Internally to support end-to-end TypeScript declarations and remain neutral to the various options for Foundry VTT
 types available TRL uses a shim layer rather than choosing a single particular set of Foundry VTT types to associate
 with. There are many advantages to this approach as various Foundry VTT platform type declaration efforts wax and
 wane. This shim layer provides a minimal set of re-exported global types that are common between all known Foundry
