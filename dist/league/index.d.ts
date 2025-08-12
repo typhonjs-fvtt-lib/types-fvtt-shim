@@ -9,7 +9,7 @@ declare global {
    * @hidden
    */
   namespace fvtt {
-    export { Application, ApplicationOptions, ClientDocument, CompendiumCollection, Folder, Game, RollTable };
+    export { Application, ClientDocument, CompendiumCollection, Folder, Game, RollTable };
   }
 }
 
@@ -27,6 +27,7 @@ declare global {
   namespace fvtt {
     export type {
       ApplicationHeaderButton,
+      FVTTApplicationOptions as ApplicationOptions,
       FVTTDataModel as DataModel,
       FVTTDocument as Document,
       FVTTDocumentConstructor as DocumentConstructor,
@@ -38,8 +39,9 @@ declare global {
     };
   }
 }
+type FVTTApplicationOptions = Application.Options;
 type FVTTDataModel = foundry.abstract.DataModel<any>;
-type FVTTDocumentCollection = DocumentCollection<any, any>;
+type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any, any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 type ApplicationHeaderButton = Application.HeaderButton;
 type EnrichmentOptions = TextEditor.EnrichmentOptions;
