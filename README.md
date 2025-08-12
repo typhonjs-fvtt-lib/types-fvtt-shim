@@ -1,5 +1,5 @@
 # types-fvtt-shim
-DO NOT USE / INSTALL / Foundry VTT v13+
+DO NOT USE / INSTALL / Foundry VTT v13+ / Last Update: 8/11/25
 
 Several useful TypeScript type guards are available for the Foundry document model:
 - `#runtime/types/fvtt-shim/guard`
