@@ -11,7 +11,6 @@ declare global {
    {
       export {
          Application,
-         ApplicationOptions,
          ClientDocument,
          CompendiumCollection,
          Folder,
