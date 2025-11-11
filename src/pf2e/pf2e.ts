@@ -20,9 +20,12 @@ declare global {
          FVTTApplicationOptions as ApplicationOptions,
          FVTTClientDocument as ClientDocument,
          FVTTCompendiumCollection as CompendiumCollection,
+         FVTTCustomFormGroup as CustomFormGroup,
+         FVTTCustomFormInput as CustomFormInput,
          FontFamilyDefinition,
          GamePF2e as Game,
          FVTTApplicationHeaderButton as ApplicationHeaderButton,
+         FVTTDataField as DataField,
          FVTTDataModel as DataModel,
          FVTTDocument as Document,
          FVTTDocumentConstructor as DocumentConstructor,
@@ -41,6 +44,9 @@ type FVTTApplicationOptions = foundry.appv1.api.ApplicationV1Options;
 type FVTTApplicationHeaderButton = foundry.appv1.api.ApplicationV1HeaderButton;
 type FVTTClientDocument = foundry.documents.abstract.ClientDocument;
 type FVTTCompendiumCollection = foundry.documents.collections.CompendiumCollection;
+type FVTTCustomFormGroup = foundry.applications.fields.CustomFormGroup;
+type FVTTCustomFormInput = foundry.applications.fields.CustomFormInput;
+type FVTTDataField = foundry.data.fields.DataField;
 type FVTTDataModel = foundry.abstract.DataModel;
 type FVTTDocument = foundry.abstract.Document;
 type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;

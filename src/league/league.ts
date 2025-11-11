@@ -16,6 +16,9 @@ declare global {
       export {
          ApplicationHeaderButton,
          FVTTApplicationOptions as ApplicationOptions,
+         FVTTCustomFormGroup as CustomFormGroup,
+         FVTTCustomFormInput as CustomFormInput,
+         FVTTDataField as DataField,
          FVTTDataModel as DataModel,
          FVTTDocument as Document,
          FVTTDocumentConstructor as DocumentConstructor,
@@ -31,7 +34,10 @@ declare global {
 // Generic types -----------------------------------------------------------------------------------------------------
 
 type FVTTApplicationOptions = Application.Options;
+type FVTTCustomFormGroup = foundry.applications.fields.CustomFormGroup;
+type FVTTCustomFormInput = foundry.applications.fields.CustomFormInput;
 type FVTTDataModel = foundry.abstract.DataModel<any>;
+type FVTTDataField = foundry.data.fields.DataField;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any, any>
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
 
