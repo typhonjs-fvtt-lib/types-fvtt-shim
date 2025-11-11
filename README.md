@@ -1,5 +1,5 @@
 # types-fvtt-shim
-DO NOT USE / INSTALL / Foundry VTT v13+ / Last Update: 8/11/25
+DO NOT USE / INSTALL / Foundry VTT v13+ / Last Update: 11/10/25
 
 Several useful TypeScript type guards are available for the Foundry document model:
 - `#runtime/types/fvtt-shim/guard`
@@ -44,7 +44,7 @@ If you are using TypeScript with TRL for Foundry 3rd party development all you h
 {
   "compilerOptions": {
     "types": [
-      "foundry-pf2e/foundry",                       // PF2E Types.
+      "foundry-pf2e",                               // PF2E Types.
       "@typhonjs-fvtt/runtime/types/fvtt-shim/pf2e" // The TRL FVTT API shim.
     ]
   }
