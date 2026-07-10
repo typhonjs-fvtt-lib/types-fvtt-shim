@@ -26,9 +26,9 @@
   "devDependencies": {
     "@league-of-foundry-developers/foundry-vtt-types": "^13.346.0-beta.20250812191140",
     "@rollup/plugin-typescript": "^12.3.0",
-    "@typhonjs-build-test/esm-d-ts": "^0.3.0-next.11",
-    "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
-    "rollup": "^4.53.2",
+    "@typhonjs-build-test/esm-d-ts": "^0.3.0",
+    "@7h3laughingman/pf2e-types": "^8.0.2",
+    "rollup": "^4.62.2",
     "tslib": "^2.8.1",
     "typescript": "^5.9.3"
   },

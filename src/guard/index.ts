@@ -1,8 +1,28 @@
 /**
- * Provides TypeScript type guards for several Foundry document model classes and objects.
+ * Provides TypeScript type guards / predicates for several Foundry document model classes and objects.
  *
  * @packageDocumentation
  */
+
+/**
+ * @param data - A potential Foundry DataField.
+ *
+ * @returns Whether the given object is a Foundry DataField instance.
+ */
+function isDataField(data: unknown): data is fvtt.DataField
+{
+   return data !== void 0 && data !== null && data instanceof foundry.data.fields.DataField;
+}
+
+/**
+ * @param data - A potential Foundry DataModel base class instance.
+ *
+ * @returns Whether the given object is a Foundry DataModel instance.
+ */
+function isDataModel(data: unknown): data is fvtt.DataModel
+{
+   return data !== void 0 && data !== null && data instanceof foundry.abstract.DataModel;
+}
 
 /**
  * @param doc - A potential Foundry document.

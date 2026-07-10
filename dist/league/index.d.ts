@@ -36,6 +36,8 @@ declare global {
       FVTTDocumentConstructor as DocumentConstructor,
       FVTTDocumentCollection as DocumentCollection,
       FVTTEmbeddedCollection as EmbeddedCollection,
+      FVTTFormGroupConfig as FormGroupConfig,
+      FVTTFormInputConfig as FormInputConfig,
       EnrichmentOptions,
       FavoriteFolder,
       FontFamilyDefinition,
@@ -49,6 +51,8 @@ type FVTTDataModel = foundry.abstract.DataModel<any>;
 type FVTTDataField = foundry.data.fields.DataField;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any, any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
+type FVTTFormGroupConfig = foundry.applications.fields.FormGroupConfig;
+type FVTTFormInputConfig<T> = foundry.applications.fields.FormInputConfig<T>;
 type ApplicationHeaderButton = Application.HeaderButton;
 type EnrichmentOptions = TextEditor.EnrichmentOptions;
 type FavoriteFolder = FilePicker.FavoriteFolder;

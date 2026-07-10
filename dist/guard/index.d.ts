@@ -1,5 +1,5 @@
 /**
- * Provides TypeScript type guards for several Foundry document model classes and objects.
+ * Provides TypeScript type guards / predicates for several Foundry document model classes and objects.
  *
  * @packageDocumentation
  */

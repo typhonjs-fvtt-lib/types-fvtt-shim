@@ -1,6 +1,6 @@
 import './common';
 
-import { GamePF2e } from 'foundry-pf2e';
+import { GamePF2e } from '@7h3laughingman/pf2e-types';
 
 /**
  * Re-exports global Foundry VTT types under a namespace shim to disambiguate global Foundry types referenced in TRL.
@@ -31,6 +31,8 @@ declare global {
          FVTTDocumentConstructor as DocumentConstructor,
          FVTTDocumentCollection as DocumentCollection,
          FVTTEmbeddedCollection as EmbeddedCollection,
+         FVTTFormGroupConfig as FormGroupConfig,
+         FVTTFormInputConfig as FormInputConfig,
          EnrichmentOptions,
          FavoriteFolder,
       };
@@ -52,6 +54,8 @@ type FVTTDocument = foundry.abstract.Document;
 type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any>
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
+type FVTTFormGroupConfig = foundry.data.FormGroupConfig;
+type FVTTFormInputConfig<T> = foundry.data.FormInputConfig<T>;
 
 // Note: due to how the PF2E types handle separating the document constructor via `DocumentConstructorOf` when
 // developing against the PF2E types internally it is handy to use this declaration to get full abstract document types.
