@@ -9,9 +9,9 @@
     "Michael Leahy <support@typhonjs.io> (https://github.com/typhonrt)"
   ],
   "exports": {
-    "./guard": {
-      "types": "./dist/guard/index.d.ts",
-      "import": "./dist/guard/index.js"
+    "./predicate": {
+      "types": "./dist/predicate/index.d.ts",
+      "import": "./dist/predicate/index.js"
     },
     "./league": {
       "types": "./dist/league/index.d.ts",

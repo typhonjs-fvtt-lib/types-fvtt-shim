@@ -12,15 +12,15 @@ export default () =>
    return [
       // Main Distribution -------------------------------------------------------------------------------------------
       {
-         input: 'src/guard/index.ts',
+         input: 'src/predicate/index.ts',
          output: [{
-            file: './dist/guard/index.js',
+            file: './dist/predicate/index.js',
             format: 'es',
             generatedCode: { constBindings: true },
             sourcemap,
          }],
          plugins: [
-            typescript({ tsconfig: './src/guard/tsconfig.json' }),
+            typescript({ tsconfig: './src/predicate/tsconfig.json' }),
             generateDTS.plugin({ tsDiagnosticLog: false }),
          ]
       }

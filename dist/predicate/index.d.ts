@@ -4,6 +4,18 @@
  * @packageDocumentation
  */
 /**
+ * @param data - A potential Foundry DataField.
+ *
+ * @returns Whether the given object is a Foundry DataField instance.
+ */
+declare function isDataField(data: unknown): data is fvtt.DataField;
+/**
+ * @param data - A potential Foundry DataModel base class instance.
+ *
+ * @returns Whether the given object is a Foundry DataModel instance.
+ */
+declare function isDataModel(data: unknown): data is fvtt.DataModel;
+/**
  * @param doc - A potential Foundry document.
  *
  * @returns Whether the given object is a Foundry document.
@@ -40,4 +52,13 @@ declare function isFolder(doc: unknown): doc is fvtt.Folder;
  */
 declare function isFolderClass(doc: unknown): doc is typeof fvtt.Folder;
 
-export { isDocument, isDocumentClass, isDocumentCollection, isEmbeddedCollection, isFolder, isFolderClass };
+export {
+  isDataField,
+  isDataModel,
+  isDocument,
+  isDocumentClass,
+  isDocumentCollection,
+  isEmbeddedCollection,
+  isFolder,
+  isFolderClass,
+};

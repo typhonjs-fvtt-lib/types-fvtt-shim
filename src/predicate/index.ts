@@ -86,6 +86,8 @@ function isFolderClass(doc: unknown): doc is typeof fvtt.Folder
 }
 
 export {
+   isDataField,
+   isDataModel,
    isDocument,
    isDocumentClass,
    isDocumentCollection,

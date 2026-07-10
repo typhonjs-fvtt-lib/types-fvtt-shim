@@ -8,6 +8,17 @@
  *
  * @returns Whether the given object is a Foundry DataField instance.
  */
+function isDataField(data) {
+    return data !== void 0 && data !== null && data instanceof foundry.data.fields.DataField;
+}
+/**
+ * @param data - A potential Foundry DataModel base class instance.
+ *
+ * @returns Whether the given object is a Foundry DataModel instance.
+ */
+function isDataModel(data) {
+    return data !== void 0 && data !== null && data instanceof foundry.abstract.DataModel;
+}
 /**
  * @param doc - A potential Foundry document.
  *
@@ -58,5 +69,5 @@ function isFolderClass(doc) {
     return doc !== void 0 && doc !== null && Object.prototype.isPrototypeOf.call(foundry.documents.Folder, doc);
 }
 
-export { isDocument, isDocumentClass, isDocumentCollection, isEmbeddedCollection, isFolder, isFolderClass };
+export { isDataField, isDataModel, isDocument, isDocumentClass, isDocumentCollection, isEmbeddedCollection, isFolder, isFolderClass };
 //# sourceMappingURL=index.js.map
