@@ -31,7 +31,7 @@ function isDataModel(data: unknown): data is fvtt.DataModel
  */
 function isDataModelValidationError(err: unknown): err is fvtt.DataModelValidationError
 {
-   return err !== void 0 && err !== null && err instanceof foundry.data.validation.DataModelValidationFailure;
+   return err !== void 0 && err !== null && err instanceof foundry.data.validation.DataModelValidationError;
 }
 
 /**

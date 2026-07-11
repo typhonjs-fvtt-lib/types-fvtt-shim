@@ -25,7 +25,7 @@ function isDataModel(data) {
  * @returns Whether the given object is a Foundry DataModelValidationError instance.
  */
 function isDataModelValidationError(err) {
-    return err !== void 0 && err !== null && err instanceof foundry.data.validation.DataModelValidationFailure;
+    return err !== void 0 && err !== null && err instanceof foundry.data.validation.DataModelValidationError;
 }
 /**
  * @param err - A potential Foundry DataModelValidationFailure instance.
