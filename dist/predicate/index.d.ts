@@ -16,6 +16,18 @@ declare function isDataField(data: unknown): data is fvtt.DataField;
  */
 declare function isDataModel(data: unknown): data is fvtt.DataModel;
 /**
+ * @param err - A potential Foundry DataModelValidationError instance.
+ *
+ * @returns Whether the given object is a Foundry DataModelValidationError instance.
+ */
+declare function isDataModelValidationError(err: unknown): err is fvtt.DataModelValidationError;
+/**
+ * @param err - A potential Foundry DataModelValidationFailure instance.
+ *
+ * @returns Whether the given object is a Foundry DataModelValidationFailure instance.
+ */
+declare function isDataModelValidationFailure(err: unknown): err is fvtt.DataModelValidationFailure;
+/**
  * @param doc - A potential Foundry document.
  *
  * @returns Whether the given object is a Foundry document.
@@ -55,6 +67,8 @@ declare function isFolderClass(doc: unknown): doc is typeof fvtt.Folder;
 export {
   isDataField,
   isDataModel,
+  isDataModelValidationError,
+  isDataModelValidationFailure,
   isDocument,
   isDocumentClass,
   isDocumentCollection,

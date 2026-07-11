@@ -39,6 +39,8 @@ declare global {
       FVTTApplicationHeaderButton as ApplicationHeaderButton,
       FVTTDataField as DataField,
       FVTTDataModel as DataModel,
+      FVTTDataModelValidationError as DataModelValidationError,
+      FVTTDataModelValidationFailure as DataModelValidationFailure,
       FVTTDocument as Document,
       FVTTDocumentConstructor as DocumentConstructor,
       FVTTDocumentCollection as DocumentCollection,
@@ -59,6 +61,8 @@ type FVTTCustomFormGroup = foundry.applications.fields.CustomFormGroup;
 type FVTTCustomFormInput = foundry.applications.fields.CustomFormInput;
 type FVTTDataField = foundry.data.fields.DataField;
 type FVTTDataModel = foundry.abstract.DataModel;
+type FVTTDataModelValidationError = foundry.data.validation.DataModelValidationError;
+type FVTTDataModelValidationFailure = foundry.data.validation.DataModelValidationFailure;
 type FVTTDocument = foundry.abstract.Document;
 type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any>;

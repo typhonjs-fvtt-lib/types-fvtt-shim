@@ -20,6 +20,22 @@ function isDataModel(data) {
     return data !== void 0 && data !== null && data instanceof foundry.abstract.DataModel;
 }
 /**
+ * @param err - A potential Foundry DataModelValidationError instance.
+ *
+ * @returns Whether the given object is a Foundry DataModelValidationError instance.
+ */
+function isDataModelValidationError(err) {
+    return err !== void 0 && err !== null && err instanceof foundry.data.validation.DataModelValidationFailure;
+}
+/**
+ * @param err - A potential Foundry DataModelValidationFailure instance.
+ *
+ * @returns Whether the given object is a Foundry DataModelValidationFailure instance.
+ */
+function isDataModelValidationFailure(err) {
+    return err !== void 0 && err !== null && err instanceof foundry.data.validation.DataModelValidationFailure;
+}
+/**
  * @param doc - A potential Foundry document.
  *
  * @returns Whether the given object is a Foundry document.
@@ -69,5 +85,5 @@ function isFolderClass(doc) {
     return doc !== void 0 && doc !== null && Object.prototype.isPrototypeOf.call(foundry.documents.Folder, doc);
 }
 
-export { isDataField, isDataModel, isDocument, isDocumentClass, isDocumentCollection, isEmbeddedCollection, isFolder, isFolderClass };
+export { isDataField, isDataModel, isDataModelValidationError, isDataModelValidationFailure, isDocument, isDocumentClass, isDocumentCollection, isEmbeddedCollection, isFolder, isFolderClass };
 //# sourceMappingURL=index.js.map
