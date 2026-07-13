@@ -45,6 +45,7 @@ declare global {
       FVTTDocumentConstructor as DocumentConstructor,
       FVTTDocumentCollection as DocumentCollection,
       FVTTEmbeddedCollection as EmbeddedCollection,
+      FVTTFilePicker as FilePicker,
       FVTTFormGroupConfig as FormGroupConfig,
       FVTTFormInputConfig as FormInputConfig,
       EnrichmentOptions,
@@ -67,6 +68,7 @@ type FVTTDocument = foundry.abstract.Document;
 type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
+type FVTTFilePicker = foundry.applications.apps.FilePicker;
 type FVTTFormGroupConfig = foundry.data.FormGroupConfig;
 type FVTTFormInputConfig<T> = foundry.data.FormInputConfig<T>;
 interface EnrichmentOptions {

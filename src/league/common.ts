@@ -13,6 +13,7 @@ declare global {
          Application,
          ClientDocument,
          CompendiumCollection,
+         FilePicker,
          Folder,
          Game,
          RollTable
