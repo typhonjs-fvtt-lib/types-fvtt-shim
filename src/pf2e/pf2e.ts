@@ -1,6 +1,8 @@
 import './common';
 
-import { GamePF2e } from '@7h3laughingman/pf2e-types';
+import type { GamePF2e }      from '@7h3laughingman/pf2e-types';
+
+import type { MakeOptional }  from '@typhonjs-svelte/runtime-base/util/types';
 
 /**
  * Re-exports global Foundry VTT types under a namespace shim to disambiguate global Foundry types referenced in TRL.
@@ -60,7 +62,7 @@ type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any>
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 type FVTTFilePicker = foundry.applications.apps.FilePicker;
-type FVTTFormGroupConfig = foundry.data.FormGroupConfig;
+type FVTTFormGroupConfig = MakeOptional<foundry.data.FormGroupConfig, 'input'>;
 type FVTTFormInputConfig<T> = foundry.data.FormInputConfig<T>;
 
 // Note: due to how the PF2E types handle separating the document constructor via `DocumentConstructorOf` when

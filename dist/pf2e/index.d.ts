@@ -1,5 +1,6 @@
 export {};
 import { GamePF2e } from '@7h3laughingman/pf2e-types';
+import { MakeOptional } from '@typhonjs-svelte/runtime-base/util/types';
 
 /**
  * @hidden
@@ -69,7 +70,7 @@ type FVTTDocumentConstructor = DocumentConstructorOf<foundry.abstract.Document>;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 type FVTTFilePicker = foundry.applications.apps.FilePicker;
-type FVTTFormGroupConfig = foundry.data.FormGroupConfig;
+type FVTTFormGroupConfig = MakeOptional<foundry.data.FormGroupConfig, 'input'>;
 type FVTTFormInputConfig<T> = foundry.data.FormInputConfig<T>;
 interface EnrichmentOptions {
   /** Include unrevealed secret tags in the final HTML? If false, unrevealed secret blocks will be removed. */

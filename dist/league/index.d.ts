@@ -1,4 +1,6 @@
 export {};
+import { MakeOptional } from '@typhonjs-svelte/runtime-base/util/types';
+
 /**
  * @hidden
  */
@@ -55,7 +57,7 @@ type FVTTDataModelValidationError = foundry.data.validation.DataModelValidationE
 type FVTTDataModelValidationFailure = foundry.data.validation.DataModelValidationFailure;
 type FVTTDocumentCollection = foundry.documents.abstract.DocumentCollection<any, any>;
 type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any, any>;
-type FVTTFormGroupConfig = foundry.applications.fields.FormGroupConfig;
+type FVTTFormGroupConfig = MakeOptional<foundry.applications.fields.FormGroupConfig, 'input'>;
 type FVTTFormInputConfig<T> = foundry.applications.fields.FormInputConfig<T>;
 type ApplicationHeaderButton = Application.HeaderButton;
 type EnrichmentOptions = TextEditor.EnrichmentOptions;
