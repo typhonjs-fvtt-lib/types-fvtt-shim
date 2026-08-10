@@ -6,7 +6,7 @@
     "target": "ES2022",
     "strict": true,
     "skipLibCheck": true,
-    "types": ["@7h3laughingman/pf2e-types"]
+    "types": ["@7h3laughingman/foundry-types"]
   },
   "include": ["./**/*"]
 }

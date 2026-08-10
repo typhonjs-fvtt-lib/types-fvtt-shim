@@ -1,20 +1,13 @@
 import './common';
 
-import type { GamePF2e }      from '@7h3laughingman/pf2e-types';
-
 import type { MakeOptional }  from '@typhonjs-svelte/runtime-base/util/types';
 
 /**
  * Re-exports global Foundry VTT types under a namespace shim to disambiguate global Foundry types referenced in TRL.
  *
- * @hidden
- *
  * @packageDocumentation
  */
 declare global {
-   /**
-    * @hidden
-    */
    namespace fvtt
    {
       export {
@@ -25,7 +18,7 @@ declare global {
          FVTTCustomFormGroup as CustomFormGroup,
          FVTTCustomFormInput as CustomFormInput,
          FontFamilyDefinition,
-         GamePF2e as Game,
+         FVTTGame as Game,
          FVTTApplicationHeaderButton as ApplicationHeaderButton,
          FVTTDataField as DataField,
          FVTTDataModel as DataModel,
@@ -64,6 +57,17 @@ type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 type FVTTFilePicker = foundry.applications.apps.FilePicker;
 type FVTTFormGroupConfig = MakeOptional<foundry.data.FormGroupConfig, 'input'>;
 type FVTTFormInputConfig<T> = foundry.data.FormInputConfig<T>;
+
+type FVTTGame = foundry.Game<
+   foundry.documents.Actor<null>,
+   foundry.documents.collections.Actors<foundry.documents.Actor<null>>,
+   foundry.documents.ChatMessage,
+   foundry.documents.Combat,
+   foundry.documents.Item<null>,
+   foundry.documents.Macro,
+   foundry.documents.Scene,
+   foundry.documents.User
+>;
 
 // Note: due to how the PF2E types handle separating the document constructor via `DocumentConstructorOf` when
 // developing against the PF2E types internally it is handy to use this declaration to get full abstract document types.

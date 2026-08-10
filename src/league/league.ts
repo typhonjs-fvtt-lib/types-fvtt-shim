@@ -5,14 +5,9 @@ import './common';
 /**
  * Re-exports global Foundry VTT types under a namespace shim to disambiguate global Foundry types referenced in TRL.
  *
- * @hidden
- *
  * @packageDocumentation
  */
 declare global {
-   /**
-    * @hidden
-    */
    namespace fvtt
    {
       export {

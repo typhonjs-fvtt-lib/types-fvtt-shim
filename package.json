@@ -24,7 +24,6 @@
   },
   "sideEffects": true,
   "devDependencies": {
-    "@7h3laughingman/pf2e-types": "^8.0.2",
     "@7h3laughingman/foundry-types": "^14.363.0",
     "@league-of-foundry-developers/foundry-vtt-types": "^13.346.0-beta.20250812191140",
     "@rollup/plugin-typescript": "^12.3.0",

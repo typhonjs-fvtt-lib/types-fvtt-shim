@@ -1,5 +1,4 @@
 export {};
-import { GamePF2e } from '@7h3laughingman/pf2e-types';
 import { MakeOptional } from '@typhonjs-svelte/runtime-base/util/types';
 
 /**
@@ -19,16 +18,10 @@ declare global {
 /**
  * Re-exports global Foundry VTT types under a namespace shim to disambiguate global Foundry types referenced in TRL.
  *
- * @hidden
- *
  * @packageDocumentation
  */
 declare global {
-  /**
-   * @hidden
-   */
   namespace fvtt {
-    export { GamePF2e as Game };
     export type {
       FVTTApplication as Application,
       FVTTApplicationOptions as ApplicationOptions,
@@ -37,6 +30,7 @@ declare global {
       FVTTCustomFormGroup as CustomFormGroup,
       FVTTCustomFormInput as CustomFormInput,
       FontFamilyDefinition,
+      FVTTGame as Game,
       FVTTApplicationHeaderButton as ApplicationHeaderButton,
       FVTTDataField as DataField,
       FVTTDataModel as DataModel,
@@ -72,6 +66,16 @@ type FVTTEmbeddedCollection = foundry.abstract.EmbeddedCollection<any>;
 type FVTTFilePicker = foundry.applications.apps.FilePicker;
 type FVTTFormGroupConfig = MakeOptional<foundry.data.FormGroupConfig, 'input'>;
 type FVTTFormInputConfig<T> = foundry.data.FormInputConfig<T>;
+type FVTTGame = foundry.Game<
+  foundry.documents.Actor<null>,
+  foundry.documents.collections.Actors<foundry.documents.Actor<null>>,
+  foundry.documents.ChatMessage,
+  foundry.documents.Combat,
+  foundry.documents.Item<null>,
+  foundry.documents.Macro,
+  foundry.documents.Scene,
+  foundry.documents.User
+>;
 interface EnrichmentOptions {
   /** Include unrevealed secret tags in the final HTML? If false, unrevealed secret blocks will be removed. */
   secrets?: boolean;
