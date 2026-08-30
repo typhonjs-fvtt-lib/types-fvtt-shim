@@ -44,8 +44,8 @@ declare global {
   }
 }
 type FVTTApplicationOptions = Application.Options;
-type FVTTCustomFormGroup = foundry.applications.fields.CustomFormGroup;
-type FVTTCustomFormInput = foundry.applications.fields.CustomFormInput;
+type FVTTCustomFormGroup = foundry.data.fields.DataField.CustomFormGroup;
+type FVTTCustomFormInput = foundry.data.fields.DataField.CustomFormInput;
 type FVTTDataModel = foundry.abstract.DataModel<any>;
 type FVTTDataField = foundry.data.fields.DataField;
 type FVTTDataModelValidationError = foundry.data.validation.DataModelValidationError;
